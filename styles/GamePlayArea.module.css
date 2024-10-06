@@ -1,0 +1,19 @@
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Safari */
+  -khtml-user-select: none;    /* Konqueror HTML */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+/* Apply to all elements */
+.noSelect * {
+  user-select: none;
+}
+
+/* Override for specific elements that should be selectable */
+.noSelect input,
+.noSelect textarea {
+  user-select: text;
+}
